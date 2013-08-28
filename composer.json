@@ -1,0 +1,29 @@
+{
+    "name": "peach-schnapps/blitline",
+    "description": "Blitline PHP for Laravel 4",
+    "keywords": ["laravel", "image processing", "blitline", "thumbnails", "s3"],
+    "authors": [
+        {
+            "name": "electblake",
+            "email": "electblake@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x",
+        "karikas/blitline" : ">=0.1"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "PeachSchnapps\\Blitline": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "repositories": [{
+        "type": "vcs",
+        "url": "git@github.com:minioak/blitline_php.git"
+    }]
+}
