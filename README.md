@@ -14,23 +14,22 @@ Blitline Provider for Lavel 4
 
 
 **Usage**
-
+```
 	$Blit = new Blitline;
-	
 	$src = 'http://p.twimg.com/Atb2B0MCAAADLk6.jpg';
-	
 	$Blit->load($src);
-  $Blit->do_resize_to_fill(256, 256);
-  $Blit->do_sharpen();
+	$Blit->do_resize_to_fill(256, 256);
+ 	$Blit->do_sharpen();
 
 	$results = $Blit->process();
 	
-  if ($results->success()) {
-    foreach($results->get_images() as $name => $url) {
-        echo "Processed: {$name} at {$url}\n";
-    }
-  } else {
-    print_r($results->get_errors());
-  }
-  
-  More Usage Example & Documentation at https://github.com/minioak/blitline_php
+	if ($results->success()) {
+		foreach($results->get_images() as $name => $url) {
+			echo "Processed: {$name} at {$url}\n";
+		}
+	} else {
+		print_r($results->get_errors());
+	}
+```
+
+More Usage Example & Documentation at https://github.com/minioak/blitline_php
