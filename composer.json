@@ -2,6 +2,8 @@
     "name": "peach-schnapps/blitline",
     "description": "Blitline PHP for Laravel 4",
     "keywords": ["laravel", "image processing", "blitline", "thumbnails", "s3"],
+    "license": "Apache-2.0",
+    "version": "0.1",
     "authors": [
         {
             "name": "electblake",
